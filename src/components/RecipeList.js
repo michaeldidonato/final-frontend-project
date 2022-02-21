@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import styles from "./RecipeList.module.css";
 
 const API_KEY = process.env.REACT_APP_VEG_API_KEY;
 
@@ -28,18 +29,24 @@ function RecipeList() {
   };
 
   return (
-    
-    <div className="App">
-      <h1>Search something</h1>
+    <div>
+      <div className={`container-fluid mx-auto ${styles["search-box"]}`}>
       <form onSubmit={searchRecipes}>
         <input
           type="text"
           name="recipes"
+          placeholder="Search..."
           value={searchedRecipes}
           onChange={(event) => setSearchedRecipes(event.target.value)}
         />
-        <input type="submit" value="Submit" />
+        <button className={styles["button"]} type="submit">
+         GO!
+        </button>
+         
       </form>
+      </div>
+
+
 
       {boxItems.map((item) => {
         return (
