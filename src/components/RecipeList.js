@@ -31,34 +31,38 @@ function RecipeList() {
   return (
     <div>
       <div className={`container-fluid mx-auto ${styles["search-box"]}`}>
-      <form onSubmit={searchRecipes}>
-        <input
-          type="text"
-          name="recipes"
-          placeholder="Search..."
-          value={searchedRecipes}
-          onChange={(event) => setSearchedRecipes(event.target.value)}
-        />
-        <button className={styles["button"]} type="submit">
-         GO!
-        </button>
-         
-      </form>
+        <form onSubmit={searchRecipes}>
+          <input
+            type="text"
+            name="recipes"
+            placeholder="Search..."
+            value={searchedRecipes}
+            onChange={(event) => setSearchedRecipes(event.target.value)}
+          />
+          <button className={styles["button"]} type="submit">
+            GO!
+          </button>
+        </form>
       </div>
 
-
-
-      {boxItems.map((item) => {
-        return (
-          <Link to={`/recipe-list/${item.id}`}>
-            <div key={item.id}>
-              <h2>{item.title}</h2>
-              <img src={item.image} alt="" />
+      <div className="container-fluid mx-auto row">
+        {boxItems.map((item) => {
+          return (
+            <div className="card col-lg-4" key={item?.id}>
+              <img
+                src={item?.image}
+                className="card-img-top"
+                alt={item?.title}
+              />
+              <div className="card-body">
+                <Link to={`/recipe-list/${item?.id}`}>
+                  <h3 className="card-title">{item?.title}</h3>
+                </Link>
+              </div>
             </div>
-          </Link>
-        );
-      })}
-
+          );
+        })}
+      </div>
     </div>
   );
 }
