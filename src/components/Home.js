@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import { RiPlantFill } from "react-icons/ri";
 import { BsFillSunFill } from "react-icons/bs";
+import { FaLeaf } from "react-icons/fa";
+import Loading from "./Loading";
 import styles from "./Home.module.css";
 
 const API_KEY = process.env.REACT_APP_VEG_API_KEY;
@@ -68,8 +70,8 @@ function Home() {
           </div>
 
           <div className="col-lg-4 p-3">
-          <RiPlantFill className={styles["icon"]} />
-          <h2>Titolo 1</h2>
+          <FaLeaf className={styles["icon"]} />
+          <h2>Titolo 3</h2>
             <p className="lead mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
               Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
             </p>
@@ -79,7 +81,7 @@ function Home() {
 
       <div>
         {loading ? (
-          <h2>Loading...</h2>
+          <Loading />
         ) : (
           <>
             <h2 className="mt-2 mb-2">Highlights</h2>
