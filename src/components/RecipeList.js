@@ -30,7 +30,9 @@ function RecipeList() {
 
   return (
     <div>
+      
       <div className={`container-fluid mx-auto ${styles["search-box"]}`}>
+      <h1 className=" pb-3 text-light">Type a Recipe you need</h1>
         <form onSubmit={searchRecipes}>
           <input
             type="text"
