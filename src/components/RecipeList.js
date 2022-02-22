@@ -14,7 +14,7 @@ function RecipeList() {
       if (searchedRecipes !== "") {
         event.preventDefault();
         let fetchSearch = await axios.get(
-          `https://api.spoonacular.com/recipes/complexSearch?query=${searchedRecipes}&diet=vegetarian&apiKey=${API_KEY}`
+          `https://api.spoonacular.com/recipes/complexSearch?query=${searchedRecipes}&number=100&diet=vegetarian&apiKey=${API_KEY}`
         );
         let vegRecipes = await fetchSearch?.data?.results;
         setBoxItems(vegRecipes);
@@ -32,7 +32,7 @@ function RecipeList() {
     <div>
       
       <div className={`container-fluid mx-auto ${styles["search-box"]}`}>
-      <h1 className=" pb-3 text-light">Type a Recipe you need</h1>
+      <h1 className=" pb-3 text-white">Type a Recipe you need</h1>
         <form onSubmit={searchRecipes}>
           <input
             type="text"
