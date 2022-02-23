@@ -89,18 +89,19 @@ function Home() {
           <Loading />
         ) : (
           <>
-            <h2 className="mt-2 mb-2">Highlights</h2>
+            <h2 className="pt-3 pb-3">Highlights</h2>
             <div className="container-fluid mx-auto row">
               {randomRecipes.map((item) => (
-                <div className="card col-lg-4" key={item?.id}>
+                <div className="card mt-4 col-lg-3" key={item?.id}>
                   <img
                     src={item?.image}
-                    className="card-img-top"
+                    className={`rounded mx-auto d-block ${styles["img-size"]}`}
                     alt={item?.title}
                   />
                   <div className="card-body">
+                    <h3 className="card-title">{item?.title}</h3>
                     <Link to={`/recipe-list/${item?.id}`}>
-                      <h3 className="card-title">{item?.title}</h3>
+                    <button class="mt-3 btn btn-warning">Go somewhere</button>
                     </Link>
                   </div>
                 </div>
