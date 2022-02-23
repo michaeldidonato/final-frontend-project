@@ -58,7 +58,7 @@ body {
 @media (min-width: 58rem) {
   .Header-content {
     text-align: left;
-    padding: 8rem 4rem;
+    padding: 12rem 4rem;
     max-width: 54rem;
     display: flex;
     justify-content: space-between;
@@ -76,6 +76,7 @@ body {
 .Header-hero p {
   font-size: 1.5rem;
   margin-bottom: 2rem;
+  margin-top: 1rem;
 }
 
 .Button {
@@ -106,4 +107,8 @@ body {
   margin: 0 auto;
   margin-bottom: 1rem;
   font-size: 5rem;
+}
+
+.img-size {
+  width: 70%;
 }
