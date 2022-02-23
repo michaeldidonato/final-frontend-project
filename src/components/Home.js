@@ -90,7 +90,7 @@ function Home() {
         ) : (
           <>
             <h2 className="pt-3 pb-3">Highlights</h2>
-            <div className="container-fluid mx-auto row">
+            <div className="container-fluid mx-auto row mb-3">
               {randomRecipes.map((item) => (
                 <div className="card mt-4 col-lg-3" key={item?.id}>
                   <img
