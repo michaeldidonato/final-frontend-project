@@ -47,7 +47,7 @@ function RecipeList() {
         </form>
       </div>
 
-      <div className="container-fluid mx-auto row">
+      <div className={`container-fluid mx-auto row pt-4 pb-3 ${styles["bg-color"]}`}>
         {boxItems.map((item) => {
           return (
             <div className="card col-lg-4 mb-4" key={item?.id}>
