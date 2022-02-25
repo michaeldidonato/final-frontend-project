@@ -51,7 +51,7 @@ function Home() {
         </div>
       </div>
 
-      <div className={`container-fluid mt-3`}>
+      <div className={`container-fluid ${styles["sizing-box"]}`}>
         <div className="row">
           <div className="col-lg-4 p-3">
             <RiPlantFill className={styles["icon"]} />
@@ -88,11 +88,11 @@ function Home() {
         {loading ? (
           <Loading />
         ) : (
-          <>
-            <h2 className="pt-3 pb-3">Highlights</h2>
+          <section className={styles["bg-color"]}>
+            <h2 className="pt-5 pb-4">Highlights</h2>
             <div className="container-fluid mx-auto row mb-3">
               {randomRecipes.map((item) => (
-                <div className="card mt-4 col-lg-3" key={item?.id}>
+                <div className="card col-lg-4 mb-4" key={item?.id}>
                   <img
                     src={item?.image}
                     className={`rounded mx-auto d-block ${styles["img-size"]}`}
@@ -107,7 +107,7 @@ function Home() {
                 </div>
               ))}
             </div>
-          </>
+          </section>
         )}
       </div>
     </main>
