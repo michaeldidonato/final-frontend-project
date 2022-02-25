@@ -2,10 +2,6 @@
     width: 80%;
 }
 
-.summary {
-    display: block;
-}
-
 @media screen and (min-width: 800px) {
     .img-size{
         width: 40%;
