@@ -42,3 +42,7 @@ input[type=text] {
   .img-size {
     width: 70%;
   }
+
+  .bg-color {
+    background-color: #EEEEEE;
+  }
