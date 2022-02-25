@@ -4,10 +4,3 @@
   box-sizing: border-box;
 }
 
-@import url("https://fonts.googleapis.com/css?family=Varela+Round");
-
-body {
-  margin: 0;
-  font-family: 'Varela Round', sans-serif !important;
-}
-
