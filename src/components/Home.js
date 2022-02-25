@@ -89,8 +89,8 @@ function Home() {
           <Loading />
         ) : (
           <section className={styles["bg-color"]}>
-            <h2 className="pt-5 pb-4">Highlights</h2>
-            <div className="container-fluid mx-auto row mb-3">
+            <h1 className="pt-5 pb-4">Highlights</h1>
+            <div className="container-fluid mx-auto row pb-3">
               {randomRecipes.map((item) => (
                 <div className="card col-lg-4 mb-4" key={item?.id}>
                   <img
