@@ -50,15 +50,16 @@ function RecipeList() {
       <div className="container-fluid mx-auto row">
         {boxItems.map((item) => {
           return (
-            <div className="card col-lg-4" key={item?.id}>
+            <div className="card col-lg-4 mb-4" key={item?.id}>
               <img
                 src={item?.image}
-                className="card-img-top"
+                className={`rounded mx-auto d-block ${styles["img-size"]}`}
                 alt={item?.title}
               />
               <div className="card-body">
-                <Link to={`/recipe-list/${item?.id}`}>
                   <h3 className="card-title">{item?.title}</h3>
+                <Link to={`/recipe-list/${item?.id}`}>
+                <button class="mt-3 btn btn-warning">Go somewhere</button>
                 </Link>
               </div>
             </div>
