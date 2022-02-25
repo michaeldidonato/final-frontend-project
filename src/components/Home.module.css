@@ -101,6 +101,11 @@ body {
   transform: scale(1.025);
 }
 
+.sizing-box {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
 .icon {
   display: block;
   color: var(--color-1);
@@ -111,4 +116,8 @@ body {
 
 .img-size {
   width: 70%;
+}
+
+.bg-color {
+  background-color: #EEEEEE;
 }
