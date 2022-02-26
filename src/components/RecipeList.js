@@ -51,7 +51,7 @@ function RecipeList() {
       >
         {!boxItems.length ? (
           <h3 className={styles["undefined-recipes"]}>
-            Nothing found <br />
+            Nothing found right now<br />
             try to search something else
           </h3>
         ) : (
