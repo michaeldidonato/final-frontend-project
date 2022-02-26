@@ -2,9 +2,9 @@
     width: 80%;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 700px) {
     .img-size{
-        width: 40%;
+        width: 400px;
     }
   }
 
