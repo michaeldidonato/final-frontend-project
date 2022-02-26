@@ -1,3 +1,7 @@
+section {
+  text-align: center;
+}
+
 .search-box {
     background-color: #ffb300;
     padding: 100px;
@@ -26,7 +30,7 @@ input[type=text] {
     background-position: 10px 10px; 
     background-repeat: no-repeat;
     padding: 12px;
-    font-weight: 600;
+    font-weight:600;
   }
 
   .button:hover {
@@ -45,4 +49,13 @@ input[type=text] {
 
   .bg-color {
     background-color: #EEEEEE;
+  }
+
+  .undefined-recipes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin:0 auto;
+    color: #BDBDBD;
   }
