@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 import styles from "./SingleRecipe.module.css";
 import Loading from "./Loading";
-import { Markup } from 'interweave';
+import { Markup } from "interweave";
 
 const API_KEY = process.env.REACT_APP_VEG_API_KEY;
 
@@ -28,7 +28,7 @@ function SingleRecipe() {
     console.log(item);
   };
 
-const contentArticle = `<p>${item?.summary}</p>`;
+  const contentArticle = `<p>${item?.summary}</p>`;
 
   return (
     <>
@@ -38,13 +38,30 @@ const contentArticle = `<p>${item?.summary}</p>`;
         <div className={`container-fluid`}>
           <h1 className="p-2">{item?.title}</h1>
           <img
-            className={`rounded ${styles["img-size"]}`}
+            className={`rounded pb-4 ${styles["img-size"]}`}
             src={item?.image}
             alt={item?.title}
           />
-        <Markup content={contentArticle} />
+          <div className="container mx-auto">
+            <Markup content={contentArticle} />
+          </div>
+
+          {item?.extendedIngredients.map(ing => {
+            return(
+             <div>
+               
+               <p>{ing?.name}</p>
+             </div> 
+            )
+          })}
+
         </div>
+
+
       )}
+
+        
+
     </>
   );
 }
