@@ -36,12 +36,15 @@ function SingleRecipe() {
         <Loading />
       ) : (
         <div className={`container-fluid`}>
-          <h1 className="p-2">{item?.title}</h1>
+          <h1 className="text-center p-2">{item?.title}</h1>
+          <div className={styles["img-center"]}>
+
           <img
-            className={`rounded pb-4 ${styles["img-size"]}`}
+            className={`${styles["img-size"]} rounded pb-4`}
             src={item?.image}
             alt={item?.title}
           />
+          </div>
           <div className="container mx-auto">
             <Markup content={contentArticle} />
           </div>
@@ -49,7 +52,7 @@ function SingleRecipe() {
           {item?.extendedIngredients.map(ing => {
             return(
              <div>
-               
+               <img src={ing?.image} alt="" />
                <p>{ing?.name}</p>
              </div> 
             )
