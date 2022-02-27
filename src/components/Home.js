@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
-import { RiPlantFill } from "react-icons/ri";
-import { BsFillSunFill } from "react-icons/bs";
+import { FaHospitalSymbol } from "react-icons/fa";
+import { GiMeat } from "react-icons/gi";
 import { FaLeaf } from "react-icons/fa";
 import Loading from "./Loading";
 import styles from "./Home.module.css";
@@ -54,31 +54,32 @@ function Home() {
       <div className={`container-fluid ${styles["sizing-box"]}`}>
         <div className="row">
           <div className="col-lg-4 p-3">
-            <RiPlantFill className={styles["icon"]} />
-            <h2>Titolo 1</h2>
+            <FaLeaf className={styles["icon"]} />
+            <h2>Green</h2>
             <p className="lead mb-0">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s.
+            From recycling our household rubbish to cycling to work, we're all aware of ways
+            to live a greener life. One of the most effective things an individual can do to
+            lower their carbon footprint is to avoid all animal products
             </p>
           </div>
           <div className={`col-lg-4 p-3`}>
-            <BsFillSunFill className={styles["icon"]} />
-            <h2>Titolo 2</h2>
+            <GiMeat className={styles["icon"]} />
+            <h2>Animal frendly</h2>
             <p className="lead mb-0">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s.
+            Preventing the exploitation of animals is not the only reason for becoming vegan,
+             but for many it remains the key factor.
+             Avoiding animal products is one of the most obvious ways you can 
+             take a stand against animal cruelty and animal exploitation everywhere
             </p>
           </div>
 
           <div className="col-lg-4 p-3">
-            <FaLeaf className={styles["icon"]} />
-            <h2>Titolo 3</h2>
+            <FaHospitalSymbol className={styles["icon"]} />
+            <h2>Healty</h2>
             <p className="lead mb-0">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s.
+            Well-planned vegan diets follow healthy eating guidelines, 
+            and contain all the nutrients that our bodies need.
+            Some research has linked vegan diets with lower blood pressure and cholesterol
             </p>
           </div>
         </div>
