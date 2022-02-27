@@ -43,6 +43,7 @@ function SingleRecipe() {
               src={item?.image}
               alt={item?.title}
             />
+            <p>Ready in {item?.readyInMinutes} minutes</p>
           </div>
 
           <div className={`container mx-auto p-2 ${styles["bg-summary"]}`}>
@@ -74,11 +75,8 @@ function SingleRecipe() {
 
           <section className="container mx-auto">
             <h2 className="pt-3 pb-1">Instructions</h2>
-            <div className={`mb-3`}>
-              <Markup
-                className="d-flex align-content-start"
-                content={item?.instructions}
-              />
+            <div className={`p-1 mb-3 ${styles["bg-inst"]}`}>
+              <Markup content={item?.instructions} />
             </div>
           </section>
         </div>
