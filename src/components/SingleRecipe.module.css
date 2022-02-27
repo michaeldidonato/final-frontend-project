@@ -6,9 +6,16 @@
 .img-center {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.bg-summary {
+.img-center p {
+    color: #ffb300;
+}
+
+.bg-summary,
+.bg-inst {
     background-color: #EEEEEE;
     border-radius: 10px;
     
