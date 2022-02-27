@@ -79,7 +79,8 @@ function Home() {
             <p className="lead mb-0">
             Well-planned vegan diets follow healthy eating guidelines, 
             and contain all the nutrients that our bodies need.
-            Some research has linked vegan diets with lower blood pressure and cholesterol
+            Some research has linked vegan diets with lower blood pressure and cholesterol,
+            and lower rates of heart disease, type 2 diabetes and some types of cancer
             </p>
           </div>
         </div>
