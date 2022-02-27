@@ -1,10 +1,39 @@
 .img-size {
     width: 80%;
+    border-radius: 10px;
 }
 
 .img-center {
     display: flex;
     justify-content: center;
+}
+
+.bg-summary {
+    background-color: #EEEEEE;
+    border-radius: 10px;
+    
+}
+
+.ingredients {
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.center {
+    display: block;
+    align-items: center;
+}
+
+li {
+    margin: 1rem;
+    text-align: left;
+}
+
+span {
+    text-align: left !important;  
 }
 
 @media screen and (min-width: 700px) {
