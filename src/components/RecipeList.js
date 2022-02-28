@@ -57,16 +57,12 @@ function RecipeList() {
       >
         {!boxItems.length ? (
           <section className="mx-auto">
-          <h3 className={styles["undefined-recipes"]}>
-            Nothing found right now<br />
-            try to search something else
-          </h3>
-
-          {loading ? (
-            <Loading />
-          ) : (
-            <div></div>
-          )}
+            <h3 className={styles["undefined-recipes"]}>
+              Nothing found right now
+              <br />
+              try to search something else
+            </h3>
+            {loading ? <Loading /> : <div></div>}
           </section>
         ) : (
           <>
