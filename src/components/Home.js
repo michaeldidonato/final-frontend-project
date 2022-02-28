@@ -105,7 +105,7 @@ function Home() {
                   <div className="card-body">
                     <h3 className="card-title">{item?.title}</h3>
                     <Link to={`/recipe-list/${item?.id}`}>
-                      <button class="mt-3 btn btn-warning">Read more</button>
+                      <button className="mt-3 btn btn-warning">Read more</button>
                     </Link>
                   </div>
                 </div>
