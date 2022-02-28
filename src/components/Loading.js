@@ -3,8 +3,8 @@ import React from "react";
 function Loading() {
   return (
     <>
-      <div class="spinner-border text-warning m-3" role="status">
-        <span class="visually-hidden">Loading...</span>
+      <div className="spinner-border text-warning m-3" role="status">
+        <span className="visually-hidden">Loading...</span>
       </div>
     </>
   );
