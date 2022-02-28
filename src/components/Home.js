@@ -57,19 +57,20 @@ function Home() {
             <FaLeaf className={styles["icon"]} />
             <h2>Green</h2>
             <p className="lead mb-0">
-            From recycling our household rubbish to cycling to work, we're all aware of ways
-            to live a greener life. One of the most effective things an individual can do to
-            lower their carbon footprint is to avoid all animal products
+              From recycling our household rubbish to cycling to work, we're all
+              aware of ways to live a greener life. One of the most effective
+              things an individual can do to lower their carbon footprint is to
+              avoid all animal products
             </p>
           </div>
           <div className={`col-lg-4 p-3`}>
             <GiMeat className={styles["icon"]} />
             <h2>Animal frendly</h2>
             <p className="lead mb-0">
-            Preventing the exploitation of animals is not the only reason for becoming vegan,
-             but for many it remains the key factor.
-             Avoiding animal products is one of the most obvious ways you can 
-             take a stand against animal cruelty and animal exploitation everywhere
+              Preventing the exploitation of animals is not the only reason for
+              becoming vegan, but for many it remains the key factor. Avoiding
+              animal products is one of the most obvious ways you can take a
+              stand against animal cruelty and animal exploitation everywhere
             </p>
           </div>
 
@@ -77,10 +78,11 @@ function Home() {
             <FaHospitalSymbol className={styles["icon"]} />
             <h2>Healty</h2>
             <p className="lead mb-0">
-            Well-planned vegan diets follow healthy eating guidelines, 
-            and contain all the nutrients that our bodies need.
-            Some research has linked vegan diets with lower blood pressure and cholesterol,
-            and lower rates of heart disease, type 2 diabetes and some types of cancer
+              Well-planned vegan diets follow healthy eating guidelines, and
+              contain all the nutrients that our bodies need. Some research has
+              linked vegan diets with lower blood pressure and cholesterol, and
+              lower rates of heart disease, type 2 diabetes and some types of
+              cancer
             </p>
           </div>
         </div>
@@ -103,7 +105,7 @@ function Home() {
                   <div className="card-body">
                     <h3 className="card-title">{item?.title}</h3>
                     <Link to={`/recipe-list/${item?.id}`}>
-                    <button class="mt-3 btn btn-warning">Read more</button>
+                      <button class="mt-3 btn btn-warning">Read more</button>
                     </Link>
                   </div>
                 </div>
