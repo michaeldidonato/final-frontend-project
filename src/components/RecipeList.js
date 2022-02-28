@@ -25,7 +25,6 @@ function RecipeList() {
         let vegRecipes = await fetchSearch?.data?.results;
         setBoxItems(vegRecipes);
         setLoading(false);
-        console.log(boxItems);
       } else {
         event.preventDefault();
         setBoxItems([]);
