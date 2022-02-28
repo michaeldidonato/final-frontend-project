@@ -1,4 +1,17 @@
-# Getting Started with Create React App
+# Veg Recipes Web App
+
+This app allows to search, read and follow instructions to cooks vegetarian and vegan recipes
+
+## Built with:
+
+* REACT HOOKS
+* REACT ROUTER V6
+* AXIOS 
+* useParams (REACT ROUTER)
+* BOOTSTRAP
+* CSS MODULES 
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
