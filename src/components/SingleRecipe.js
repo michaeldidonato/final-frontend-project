@@ -22,10 +22,8 @@ function SingleRecipe() {
       `https://api.spoonacular.com/recipes/${params.id}/information?includeNutrition=true&apiKey=${API_KEY}`
     );
     let details = await fetchItem.data;
-    console.log(details);
     setItem(details);
     setLoading(!loading);
-    console.log(item);
   };
 
   const contentArticle = `<p>${item?.summary}</p>`;
