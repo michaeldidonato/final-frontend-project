@@ -17,6 +17,7 @@ function RecipeList() {
     try {
       if (searchedRecipes !== "") {
         event.preventDefault();
+        setBoxItems([]);
         setLoading(true);
         let fetchSearch = await axios.get(
           `https://api.spoonacular.com/recipes/complexSearch?query=${searchedRecipes}&number=100&diet=vegetarian&apiKey=${API_KEY}`
