@@ -1,6 +1,6 @@
 # Veg Recipes Web App
 
-This app allows to search, read and follow instructions to cooks vegetarian and vegan recipes
+This app allows to search, read and follow instructions to cook vegetarian and vegan recipes
 
 ## Built with:
 
