@@ -1,8 +1,8 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Home from "./components/Home";
-import RecipeList from "./components/RecipeList";
-import SingleRecipe from "./components/SingleRecipe";
+import Home from "./components/home/Home";
+import RecipeList from "./components/recipeList/RecipeList";
+import SingleRecipe from "./components/singleRecipe/SingleRecipe";
 import "./App.css";
 
 function App() {
