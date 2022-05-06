@@ -13,6 +13,18 @@ Web Site: https://veg-recipes-01.web.app/
 * BOOTSTRAP
 * CSS MODULES 
 
+## How to install:
+## Istallation
+1. Clone the repo: 
+```sh 
+git clone https://github.com/michaeldidonato/hackednews.git
+```
+2. ### `npm i`
+
+3. Create a file .env to put the API KEY with the following variable name: REACT_APP_VEG_API_KEY
+
+Example: REACT_APP_VEG_API_KEY = {alphanumerical code}
+
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
