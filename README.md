@@ -4,7 +4,7 @@ This app allows to search, read and follow instructions to cook vegetarian and v
 
 Web Site: https://veg-recipes-01.web.app/
 
-## Built with:
+## Built with
 
 * REACT HOOKS
 * REACT ROUTER V6
@@ -13,8 +13,8 @@ Web Site: https://veg-recipes-01.web.app/
 * BOOTSTRAP
 * CSS MODULES 
 
-## How to install:
 ## Istallation
+
 1. Clone the repo: 
 ```sh 
 git clone https://github.com/michaeldidonato/veg-recipes.git
