@@ -4,12 +4,12 @@ import axios from "axios";
 import styles from "./SingleRecipe.module.css";
 import Loading from "../loading/Loading";
 import { Markup } from "interweave";
-
-const API_KEY = process.env.REACT_APP_VEG_API_KEY;
+import { apiCLient } from "../../apiClient/apiClient";
 
 function SingleRecipe() {
   const [item, setItem] = useState({});
   const [loading, setLoading] = useState(true);
+  const { baseUrl, apiKey, singleRecipe } = apiCLient;
 
   let params = useParams();
 
@@ -18,8 +18,15 @@ function SingleRecipe() {
   }, []);
 
   const itemDetails = async () => {
+    // let fetchItem = await axios.get(
+    //   `https://api.spoonacular.com/recipes/${params.id}/information?includeNutrition=true&apiKey=${API_KEY}`
+    // );
     let fetchItem = await axios.get(
-      `https://api.spoonacular.com/recipes/${params.id}/information?includeNutrition=true&apiKey=${API_KEY}`
+      baseUrl +
+        `${params.id}/` +
+        singleRecipe.endpoint +
+        singleRecipe.params +
+        apiKey
     );
     let details = await fetchItem.data;
     setItem(details);

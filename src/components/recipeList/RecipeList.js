@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 import Loading from "../loading/Loading";
 import axios from "axios";
 import styles from "./RecipeList.module.css";
-
-const API_KEY = process.env.REACT_APP_VEG_API_KEY;
+import { apiCLient } from "../../apiClient/apiClient";
 
 function RecipeList() {
   const [boxItems, setBoxItems] = useState([]);
   const [loading, setLoading] = useState(false);
+  const { baseUrl, apiKey, recipeList } = apiCLient;
   const { register, handleSubmit } = useForm();
 
   const searchRecipes = async (data) => {
@@ -18,7 +18,11 @@ function RecipeList() {
         setBoxItems([]);
         setLoading(true);
         let fetchSearch = await axios.get(
-          `https://api.spoonacular.com/recipes/complexSearch?query=${data.recipe}&number=100&diet=vegetarian&apiKey=${API_KEY}`
+          baseUrl +
+            recipeList.endpoint +
+            `${data.recipe}` +
+            recipeList.params +
+            apiKey
         );
         let vegRecipes = await fetchSearch?.data?.results;
         setBoxItems(vegRecipes);

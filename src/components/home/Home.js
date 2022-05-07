@@ -6,12 +6,12 @@ import { GiMeat } from "react-icons/gi";
 import { FaLeaf } from "react-icons/fa";
 import Loading from "../loading/Loading";
 import styles from "./Home.module.css";
-
-const API_KEY = process.env.REACT_APP_VEG_API_KEY;
+import { apiCLient } from "../../apiClient/apiClient";
 
 function Home() {
   const [randomRecipes, setRandomRecipes] = useState([]);
   const [loading, setLoading] = useState(true);
+  const { baseUrl, apiKey, home } = apiCLient;
 
   useEffect(() => {
     randomItems();
@@ -20,7 +20,7 @@ function Home() {
   const randomItems = async () => {
     try {
       let fetchItems = await axios.get(
-        `https://api.spoonacular.com/recipes/random?apiKey=${API_KEY}&number=60`
+        baseUrl + home.endpoint + home.params + apiKey
       );
       let random = await fetchItems?.data?.recipes;
       let vegRecipes = random.filter((item) => item?.vegetarian === true);
