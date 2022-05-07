@@ -4,7 +4,7 @@ This app allows to search, read and follow instructions to cook vegetarian and v
 
 Web Site: https://veg-recipes-01.web.app/
 
-## Built with:
+## Built with
 
 * REACT HOOKS
 * REACT ROUTER V6
@@ -13,17 +13,18 @@ Web Site: https://veg-recipes-01.web.app/
 * BOOTSTRAP
 * CSS MODULES 
 
-## How to install:
 ## Istallation
+
 1. Clone the repo: 
 ```sh 
-git clone https://github.com/michaeldidonato/hackednews.git
+git clone https://github.com/michaeldidonato/veg-recipes.git
 ```
-2. ### `npm i`
+2.   ### `npm i`
+ 
+ 3. Download the API KEY through the following Api resource: https://spoonacular.com/food-api/console#Dashboard
 
-3. Create a file .env to put the API KEY with the following variable name: REACT_APP_VEG_API_KEY
+4. Create a file .env to put the API KEY with the following variable name: REACT_APP_VEG_API_KEY
 
-Example: REACT_APP_VEG_API_KEY = {alphanumerical code}
 
 ## Getting Started with Create React App
 
