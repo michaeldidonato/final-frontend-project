@@ -9,7 +9,7 @@ Web Site: https://veg-recipes-01.web.app/
 * REACT HOOKS
 * REACT ROUTER V6
 * REACT HOOK FORM
-* AXIOS 
+* AXIOS
 * useParams (REACT ROUTER)
 * BOOTSTRAP
 * CSS MODULES 
