@@ -18,7 +18,7 @@ Web Site: https://final-frontend-project.web.app/
 
 1. Clone the repo: 
 ```sh 
-git clone https://github.com/michaeldidonato/veg-recipes.git
+git clone https://github.com/michaeldidonato/final-frontend-project.git
 ```
 2.   ### `npm i`
  
