@@ -2,7 +2,7 @@
 
 This app allows to search, read and follow instructions to cook vegetarian and vegan recipes
 
-Web Site: https://veg-recipes-01.web.app/
+Web Site: https://final-frontend-project.web.app/
 
 ## Built with
 
